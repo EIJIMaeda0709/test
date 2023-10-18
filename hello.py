@@ -15,5 +15,6 @@ def post():
     products = ["iPhone","iPad","Mac","MacBook", "Apple Watch"]
     return render_template("index.html",name=name, products = products)
 
+
 if __name__ == "__main__":
     app.run(port=8000, debug=True)        
