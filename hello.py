@@ -11,7 +11,7 @@ def index():
 
 @app.route("/index",methods=["post"])
 def post():
-    name = request.args.get("name")
+    name = request.args.get("name") 
     products = ["iPhone","iPad","Mac","MacBook", "Apple Watch"]
     return render_template("index.html",name=name, products = products)
 
